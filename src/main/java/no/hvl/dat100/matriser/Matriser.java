@@ -4,9 +4,12 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int[] rad : matrise) {
+			for (int tall : rad) {
+				System.out.print(tall + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	// b)
@@ -14,15 +17,15 @@ public class Matriser {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+
 	}
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
+
 		// TODO
 		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-	
+
 	}
 
 	// d)
@@ -30,16 +33,16 @@ public class Matriser {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
-		
+
 	}
-	
+
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO
 
 		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
+
 	}
 
 	// f)
@@ -47,6 +50,6 @@ public class Matriser {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-	
+
 	}
 }
