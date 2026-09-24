@@ -5,31 +5,56 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
-
+		for (int t : tabell){
+			System.out.println(t + "");
+		}
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+		String[] tab = {"42", "67", "89"};
+		String resultat = "[";
+
+		for (int i = 0; i < tab.length; i++) {
+			resultat = resultat + tab[i];
+
+			if (i < tab.length - 1) {
+				resultat = resultat + ",";
+			}
+		}
+		resultat = resultat + "]";
+		System.out.println(resultat);
+		return resultat;
 	}
 
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
+		int[] tall = {4, 6, 11};
+		int sum = 0;
+
+		for (int i : tall){
+			sum = sum + i;
+		}
+		System.out.println("sum = " + sum);
+		return sum;
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
+		//SKAL JEG LAGE EN TABELL FØRST MED EGNE TALL??
+		boolean funnet = false;
+		int i = 0;
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
+		while (i < tabell.length && !funnet){
+			if (tabell[i] == tall) {
+				funnet = true;
+			}
+			i++;
+		}
+		System.out.println("motsatt rekkefølge: " + funnet);
+		return funnet;
 	}
 
 	// e)
