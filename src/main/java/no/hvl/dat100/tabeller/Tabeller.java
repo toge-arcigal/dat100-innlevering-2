@@ -5,21 +5,19 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		for (int t : tabell){
-			System.out.println(t + "");
+		for (int i = 0; i < tabell.length; i++){
+			System.out.println(tabell[i] + "");
 		}
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		String[] tab = {"42", "67", "89"};
 		String resultat = "[";
 
-		for (int i = 0; i < tab.length; i++) {
-			resultat = resultat + tab[i];
-
-			if (i < tab.length - 1) {
+		for (int i = 0; i < tabell.length; i++){
+			resultat = resultat + tabell[i];
+			if (i < tabell.length - 1){
 				resultat = resultat + ",";
 			}
 		}
@@ -31,7 +29,7 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-		int[] tall = {4, 6, 11};
+		int[] tall = tabell;
 		int sum = 0;
 
 		for (int i : tall){
@@ -43,18 +41,15 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-		//SKAL JEG LAGE EN TABELL FØRST MED EGNE TALL??
-		boolean funnet = false;
-		int i = 0;
 
-		while (i < tabell.length && !funnet){
-			if (tabell[i] == tall) {
-				funnet = true;
+		int [] tab = tabell;
+
+		for (int i = 0; i < tab.length; i++){
+			if (tab[i] == tall) {
+				return true;
 			}
-			i++;
 		}
-		System.out.println("motsatt rekkefølge: " + funnet);
-		return funnet;
+		return false;
 	}
 
 	// e)
