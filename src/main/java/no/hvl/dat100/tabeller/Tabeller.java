@@ -5,8 +5,8 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		for (int i = 0; i < tabell.length; i++){
-			System.out.println(tabell[i] + "");
+		for (int t : tabell){
+			System.out.println(t + "");
 		}
 	}
 
@@ -48,7 +48,7 @@ public class Tabeller {
 			if (tab[i] == tall) {
 				return true;
 			}
-		}m
+		}
 		return false;
 	}
 
