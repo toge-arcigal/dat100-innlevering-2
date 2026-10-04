@@ -61,12 +61,8 @@ public class Tabeller {
 			if (tabell[i] == tall) {
 
 				return i;
-
-
 			}
 		}
-
-
         return -1;
     }
 
@@ -77,7 +73,6 @@ public class Tabeller {
 		for (int i = 0; i < tabell.length; i++) {
 			nyTabell[i] = tabell[tabell.length - 1 - i];
 		}
-
 		return nyTabell;
 	}
 
@@ -104,12 +99,8 @@ public class Tabeller {
             for (int i = 0; i < tabell2.length; i++) {
                 resultat[tabell1.length + i] = tabell2[i];
             }
-
             return resultat;
 
     }
-
-
-
 
 }
