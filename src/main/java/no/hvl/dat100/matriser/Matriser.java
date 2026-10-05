@@ -20,10 +20,14 @@ public class Matriser {
 
 		for (int i = 0; i < matrise.length; i++) {
 			for (int j = 0; j < matrise[i].length; j++) {
-				resultat += matrise[i][j] + " ";
+				resultat += matrise[i][j];
+				if (j < matrise[i].length - 1) {
+					resultat += " ";
+				}
 			}
 			resultat += "\n";
 		}
+		System.out.println(resultat);
 		return resultat;
 	}
 
